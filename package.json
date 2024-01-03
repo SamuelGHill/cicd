@@ -6,10 +6,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "stepzen-login": "node login.js",
     "deploy-endpoint": "stepzen start --dir=./stepzen",
     "lint": "next lint"
   },
   "dependencies": {
+    "dotenv": "^16.3.1",
     "next": "14.0.4",
     "react": "^18",
     "react-dom": "^18",
