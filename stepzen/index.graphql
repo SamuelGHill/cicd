@@ -1,0 +1,8 @@
+type Root {
+  data: String
+}
+
+type Query {
+  myQuery(data: String): Root
+    @rest(method: POST, endpoint: "https://httpbin.org/post")
+}
