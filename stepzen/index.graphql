@@ -3,6 +3,6 @@ type Root {
 }
 
 type Query {
-  myQuery(data: String): Root
+  httpBin(data: String): Root
     @rest(method: POST, endpoint: "https://httpbin.org/post")
 }
