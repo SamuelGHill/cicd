@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "stepzen-login": "node login.js",
-    "deploy-endpoint": "stepzen start --dir=./stepzen",
+    "deploy-endpoint": "stepzen deploy --dir=./stepzen",
     "lint": "next lint"
   },
   "dependencies": {
