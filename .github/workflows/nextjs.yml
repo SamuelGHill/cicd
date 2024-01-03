@@ -103,6 +103,9 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '20.x'
+      - run: |
+        touch .env
+        echo ADMINKEY=${{ secrets.ADMINKEY }} >> .env
       - run: npm ci
       - run: npm run stepzen-login
       - run: npm run deploy-endpoint
