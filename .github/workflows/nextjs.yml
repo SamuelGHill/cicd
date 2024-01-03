@@ -81,7 +81,7 @@ jobs:
           path: ./out
 
   # Deployment job
-  deploy app:
+  deploy_app:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -91,9 +91,9 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-  deploy endpoint:
+  deploy_endpoint:
     runs-on: ubuntu-latest
-    needs: deploy app
+    needs: deploy_app
 
     steps:
       - uses: actions/checkout@v4
