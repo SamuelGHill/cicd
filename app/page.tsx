@@ -15,17 +15,15 @@ async function getData() {
 export default async function Home() {
   const data = await getData()
 
-  // console.log('data', data)
-
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
         <ul>
           <li>
-            1
+            {data.login}
           </li>
           <li>
-            2
+            {data.id}
           </li>
         </ul>
       </div>
